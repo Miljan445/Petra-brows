@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+src: url("../fonts/Poppins-Light.otf");
+font-family: "pl";
+}
+@font-face{
+    src: url("../fonts/NimbusRomNo9L-Reg.otf");
+    font-family: "nr";
+}
+@font-face{
+src: url("../fonts/Salazar-4VGW.ttf");
+font-family: "ab";
+}
+.body{
+    height: 100%;
+    width: auto;
+    position: relative;
+}
+header img{
+    height: 80px;
+    width: auto;
+    align-self: center;
+    width: auto;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 999;
+}
+.header{
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+.lista{
+    justify-self: flex-end;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.lista li{
+   
+    font-size: 20px;
+    font-family: "nr";
+    list-style: none;
+}
+.lista li a{
+    color: white;
+    margin-right: 30px;
+}
+.lista li a:hover{
+    color: white;
+}
+.zaglavlje{
+    background-image: url("../slike/pocetna.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+    background-position: center right;
+    display: flex;
+    align-items: center;
+}
+.zaglavlje h1{
+    margin: 0;
+    padding: 0;
+    font-family: "ab";
+    color: #b08f26;
+    font-size: 90px;
+}
+.omotac{
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.zaglavlje h2{
+    font-family: "nr";
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 30px;
+    
+}
+.dugme{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family:"pl";
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+.dugme:nth-child(1){
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.dugme:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+.social img{
+    height: 25px;
+    
+    width: auto;
+}
+.social a{
+    margin-left: 10px;
+}
+.social img:first-child{
+    margin-left: 0;
+}
+.social{
+    align-self: start;
+    padding-top: 2%;
+}
+.social img:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.ham{
+    display: none;
+    align-self: center;
+}
+.line{
+    margin-top: 5px;
+    height: 5px;
+    width: 35px;
+    background-color: white;
+    position: relative;
+}
+.line:first-child{
+    margin-top: 0;
+    width: 50%;
+}
+.line:nth-child(2){
+    width: 75%;
+}
+.hammenu{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left:100%;
+    top: 0;
+}
+.listaMenu{
+    list-style-type: none;
+    align-self: center;
+    right: 15%;
+    position: relative;
+}
+.listaMenu li{
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: "nr";
+   
+}
+.listaMenu li a {
+    color: white;
+}
+.listaMenu li a:hover{
+    text-decoration: none;
+}
+@media screen and (max-width:730px){
+    .lista li {
+        display: none;
+    }
+    .ham{
+        display: block;
+    }
+    .statistika .omotac h2{
+        font-size: 30px;
+    }
+
+}
+@media screen and (max-width:650px){
+    .zaglavlje h1{
+        font-size: 75px;
+    }
+    .dugme:nth-child(2){
+        margin-left: 0;
+    }
+    .zaglavlje h2{
+        font-size: 30px;
+    }
+    .social{
+        padding-top: 5%;
+    }
+    .dugme:nth-child(2){
+        margin-left: 0;
+    }
+    .header{
+        width: 80%;
+    }
+
+}
+@media screen and (max-width:495px){
+    .zaglavlje h1{
+        font-size: 60px;
+        text-align: center;
+    }
+    .zaglavlje h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .dugme a{
+        font-size: 20px;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 10px;
+        align-self: center;
+    }
+    .omotac{
+        width: 80%;
+    }
+ 
+    .social{
+        padding-top: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dugmad{
+        display: flex;
+        flex-direction: column;
+    }
+    .dugmad a{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*Animacija Pocetak*/
+
+.in{
+    animation: in 1s forwards;
+}
+@keyframes in {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 30%;
+    }
+
+}
+.out{
+    animation:  out 1s forwards;
+}
+@keyframes out{
+    0%{
+        left: 30%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.bodyOut{
+    animation: bodyOut 1s forwards;
+}
+@keyframes bodyOut {
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 70%;
+    }
+}
+.bodyIn{
+    animation: bodyIn 1s forwards;
+}
+@keyframes bodyIn {
+    0%{
+        right: 70%;
+    }
+    100%{
+        right: 0%;
+    }
+}
+.hit{
+    animation: hit 0.5s forwards;
+}
+@keyframes hit {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.hit2{
+    animation: hit2 0.5s forwards;
+}
+@keyframes hit2 {
+    0%{}
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.anim1{
+    animation: anim1 1s forwards;
+}
+@keyframes anim1 {
+    0%{
+        top: 0;
+    }
+     50%{
+        top: -10px;
+    }
+    100%{
+         transform: rotate(405deg);
+        width: 100%;
+        top: 0;
+    }
+}
+  .anim1r{
+    animation: anim1r 1s forwards;
+}
+@keyframes anim1r {
+    0%{
+        top: 0;
+        transform: rotate(405deg);
+        width: 100%;
+    }
+    
+   50%{
+        top: -10px;
+    }
+    100%{
+        transform: rotate(0deg);
+       width: 50%;
+    }
+}
+    .anim2{
+    animation: anim2 1s forwards;
+}
+@keyframes anim2 {
+    0%{ 
+        top: 0px;}
+    50%{
+        
+        top: -20px;
+    }
+    100%{
+        
+        top: -10px;
+        transform: rotate(-405deg);
+        width: 100%;
+    }
+}
+  .anim2r{
+    animation: anim2r 1s forwards;
+
+}
+@keyframes anim2r {
+    0%{ 
+        position: relative;
+        top: -10px;
+        transform: rotate(-405deg);
+        width: 100%;
+    }
+     50%{
+        position: relative;
+        top: -20px;
+    }
+    100%{
+        transform: rotate(0deg);
+        top: 0px;
+        width: 75%;
+    }
+}
+
+/*Animacija Kraj*/
+
+
+.kartice{
+    height: auto;
+    width: 100%;
+    background-image: url("../slike/oNamaLinije.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.kartice .row{
+    margin:0;
+    padding: 0;
+}
+.kartice h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.kartice h2{
+    padding-bottom: 10%;
+    padding-top: 10%;
+    font-family: "ab";
+    text-align: center;
+    color: #b08f26;
+}
+.kartice h3{
+    padding-bottom: 10%;
+    padding-top: 10%;
+    font-family: "nr";
+}
+.kartice .col-md-6{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 500px;
+    width: 47.5%;
+}
+.kartice .col-md-6:nth-child(3){
+    margin-bottom:10%;
+}
+.kartice .col-md-6 p{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "pl";
+}
+hr{
+    background-color:#b08f26;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 2px;
+}
+.kartice .col-md-6:nth-child(2){
+    margin-right: 5%;
+}
+@media screen and (max-width:995px){
+    .kartice .col-md-6:nth-child(3){
+        margin-top: 5%;
+    }
+    .kartice .col-md-6{
+        width: 100%;
+    }
+}
+.kartice .col-md-6 img{
+    height: 25%;
+    width: auto;
+    display: block;
+    margin:0 auto ;
+    padding-top: 10%;
+}
+@media screen and (max-width:495px){
+    .kartice .col-md-6{
+        height: 600px;
+    }
+    .kartice .col-md-6 img{
+        height: 15%;
+    }
+    .statistika h2{
+        font-size: 20px;
+    }
+}
+.statistika{
+    height: 500px;
+    width: 100%;
+    background-image: url("../slike/Onama.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    
+}
+.statistika span{
+    color: #b08f26;
+    font-family: "nr";
+    
+}
+.statistika h2{
+    color: white;
+    font-family: "nr";
+    margin-top: 10px;
+    font-size: 40px;
+    
+}
+.statistika .hr{
+    height: 2px;
+    background-color: #b08f26;
+    border: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 70%;
+    opacity: 0.7;
+}
+@media screen and (max-width:730px){
+    .statistika .hr{
+        width: 100%;
+    }
+    .holder img{
+        width: 100%;
+    }
+}
+.oNama {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+.oNama p{
+    padding-top:40px;
+    padding-bottom:40px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    font-family: "pl";
+    font-size: 20px;
+}
+.oNama h2{
+    text-align: center;
+    font-family: "ab";
+    font-size: 30px;
+    color: #b08f26;
+}
+.galerija{
+    height: auto;
+    width: 100%;
+    margin-bottom: 35%;
+}
+.item{
+    height: auto;
+    width: 100%;
+    display: none;
+    position:absolute;
+      z-index: 1;
+      overflow: hidden;
+}
+.item img{
+    height: auto;
+    width: 100%;
+}
+.current{
+    display: block;
+}
+#prev{
+    transform: rotate(180deg);
+    align-self: flex-start;
+    height: 40px;
+    width: auto;
+    opacity: 0.6;
+}
+.arrows{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    padding-top: 27%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+#next{
+    align-self: flex-end;
+    height: 40px;
+    width: auto;
+    opacity: 0.6;
+}
+.fade{
+    animation: fade 0.5s forwards;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.contact  {
+    font-family: "pl";
+}
+.contact h2{
+    font-family: "ab";
+    text-align: center;
+    margin-bottom: 60px;
+    color: #b08f26;
+}
+#submit{
+    background-color: black !important;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+.kontakt{
+    height: auto;
+    width: 100%;
+    padding-bottom: 15px;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+footer p
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petra Brows</title>
+</head>
+<body>
+    <div class="body">
+        <header>
+                <div class="header">
+                    <img src="slike/logo.png" alt="logo">
+                    <ul class="lista">
+                        <li><a href="#pocetna">Početna</a></li>
+                        <li><a href="#oNama">O nama</a></li>
+                        <li><a href="#gal">Galerija</a></li>
+                        <li><a href="#contactForm">Kontakt</a></li>
+                    </ul>
+                    <div class="ham">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+            </div>
+        </header>
+       <div class="zaglavlje">
+            <div class="omotac" id="pocetna">
+                <h1>Petra Brows</h1>
+                <h2>Salon za mikropigmentaciju obrva</h2>
+                <div class="dugmad">
+                  <a href="#contactForm"><button class="dugme">Zakaži tretman</button></a> 
+               <a href="#opis"><button class="dugme">Pogledaj više</button></a>
+                </div>
+                <div class="social">
+                   <a href="https://www.instagram.com/petra.brows/?hl=sr"><img src="slike/instagram.png" alt="instagram"></a>
+                   <a href="mailto:petragrmusa95@gmail.com"><img src="slike/mail.png" alt="mail"></a>
+                    <a href="tel:+381695557170"><img src="slike/telefon.png" alt="telefon"></a>
+                </div>
+            </div>
+       </div>
+       <div class="kartice" id="oNama">
+           <div class="omotac">
+           <div class="row">
+            <h2>Naše usluge</h2>
+            <div class="col-md-6">
+                <img src="slike/eyelash.svg" alt="eyelash">
+                <h3>Mikropigmentacija</h3>
+                <hr>
+                <p>
+                    Najsavremenija i  metoda senčenja obrva. Radi se u micropixelima, POVRŠINSKI (samo u prvom sloju kože-epidermu) To je polutrajna metoda i traje do 2 godine (u zavisnosti od tipa i debljine kože kao i od održavanja) Za rad se koriste prirodne, biljne boje. 
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="slike/eyebrow.svg" alt="eyelash">
+                <h3>Korekcija</h3>
+                <hr>
+                <p>
+                    Korekcija se radi nakon 4-6 nedelja Kada ih tek uradite, obrve budu 20-30% tamnije i 10-20% deblje nekoliko dana nakon tretmana počinju da se ljušte i taj proces traje 2-3 dana U naredne 3 nedelje pigment izbija na površinu kože Samozaceljenje traje do mesec dana, kada dobijate pravi rezultat kako će obrvice zaista i izgledati A to je: PRELEPE, PRIRODNE, SAVRŠENE, dobićete sasvim drugi oblik lica i bićete zaljubljeni u njih
+                </p>
+            </div>
+           </div>
+       </div>
+       </div>
+       <div class="statistika">
+           <div class="omotac">
+            <h2><span>Preko 50 </span>zadovoljnih mušterija</h2>
+            <div class="hr"></div>
+            <h2><span>Brzo </span>zakazivanje</h2>
+            <div class="hr"></div>
+            <h2><span>Profesionalni </span>tim posvećen samo vama</h2>
+            <div class="hr"></div>
+           </div>
+       </div>
+       <div class="oNama" id="opis">
+           <div class="omotac">
+            <h2>O nama</h2>
+            <p>
+             Dobro došli u Studio Petra brows. Nalazimo se u Batajnici, u ulici Vojvodjanskih brigada 12. Posveceni smo tome da Vam pružimo najbolju moguću uslugu u prijateljskoj atmosferi i toplom ambijentu.
+ 
+             Naš master Petra Grmuša Radulović, završila je školu za negu lepote, karijeru je započela stilizovanjem kose i vec dugi niz godina ulepšava dame. Prateci savremene trendove i želje klijenata, 2018. godine završila je Adaktar akademiju i od tada
+            </p>
+           </div>
+       </div>
+<!---Galerija pocetak-->
+
+<!--galerija kraj-->
+<div class="galerija" id="gal">
+    <div class="item current"><img src="slike/gal2.jpg" alt="galeryImage"></div>
+    <div class="item"><img src="slike/gal1.jpg" alt="galeryImage"></div>
+    <div class="item"><img src="slike/gal2.jpg" alt="galeryImage"></div>
+    <div class="item"><img src="slike/gal1.jpg" alt="galeryImage"></div>
+    <div class="arrows">
+        <img src="slike/next.png" alt = "arrow" id="prev">
+        <img src="slike/next.png" alt = "arrow" id="next">
+    </div>
+</div>
+
+
+<div class="kontakt">
+<!--contact form begining-->
+<section class="container contact">
+    <section class="contact-form con">
+        <h2>Kontaktirajte nas</h2>
+        <form role="form" id="contactForm" class="contact-form conpad" data-toggle="validator"
+            class="shake">
+            <div class="form-group">
+                <div class="controls">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required
+                        data-error="Please enter your name">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="controls">
+                    <input type="email" class="email form-control" id="email" placeholder="Email" required
+                        data-error="Please enter your email">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="controls">
+                    <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required
+                        data-error="Please enter your message subject">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="controls">
+                    <textarea id="message" rows="7" placeholder="Message" class="form-control" required
+                        data-error="Write your message"></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+            <button type="submit" id="submit" class="btn">Send Message</button>
+            <div id="msgSubmit" class="h3 text-center hidden"></div>
+            <div class="clearfix"></div>
+
+        </form>
+        <!-- End Contact Form -->
+    <!-- End Content Section  -->
+    <!-- Main JS  -->
+    <script type="text/javascript" src="assets/js/jquery-min.js"></script>
+    <script type="text/javascript" src="assets/js/form-validator.min.js"></script>
+    <script type="text/javascript" src="assets/js/contact-form-script.js"></script>
+</section>
+
+</div>
+<footer>
+    <div class="omotac">
+       <p>All rights reserved | 2020</p>
+    </div>
+</footer>
+       <!---Body tag-->
+    </div>
+       <!---Hamburger meni-->
+       <div class="hammenu">
+        <ul class="listaMenu">
+            <li><a href="#pocetna">Početna</a></li>
+            <li><a href="#oNama">O nama</a></li>
+            <li><a href="#gal">Galerija</a></li>
+            <li><a href="#contactForm">Kontakt</a></li>
+        </ul>
+       </div>
+<script src="js/script.js"></script> 
+</body>
+</html>
